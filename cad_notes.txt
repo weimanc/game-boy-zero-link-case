@@ -1,0 +1,36 @@
+CAD Order of operations
+
+#helper parts:
+
+screwpost:
+- pad sketch
+- mirror
+
+speaker grill:
+- master sketch_speaker_grill, one grill
+- clone sketch and transform back to origin
+- draft wb; array 6; sketch_speaker_grill
+- pad; symmetric 10mm
+- transform back
+- cut with top-body  
+- Z offset
+
+
+Top:
+- sketch-top-outline
+- pad gbz_top_height
+- boolean difference speaker cut
+# make shell, thickness althernative
+# https://old.reddit.com/r/FreeCAD/comments/v8qten/cant_add_thickness_feature/
+- curves wb, select shell faces
+- curves wb, misc -> parametric solid 
+- 3D offset, -1.6mm, intersect
+- create solid
+- boolean difference (with the top body, the one that is a solid)
+- fillet top edges gbz_fillet_radius
+- union with screwposts
+- cut with all cutout objects (screen, lcd, buttons, usbc)
+- chamfer on insides (for strength)
+- fillet holes for buttons
+- union select buttons
+- fillet dpad; ab
