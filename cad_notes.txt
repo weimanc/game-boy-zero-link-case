@@ -34,3 +34,20 @@ Top:
 - fillet holes for buttons
 - union select buttons
 - fillet dpad; ab
+
+
+bottom
+- sketch-bottom-outline
+- pad gbz_bottom_height
+# make shell, thickness althernative
+- curves wb, select shell faces
+- curves wb, misc -> parametric solid 
+- 3D offset, -1.6mm, intersect
+- create solid
+- boolean difference (with the bottom body, the one that is a solid)
+- fillet bottom edges 
+  - gbz_grid_radius on bottom and corners edges
+  - 2mm on top edge (gbz_fillet_radius too aggressive)
+  - 2mm on insides
+- cut grip texture
+- union with screwposts
