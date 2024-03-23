@@ -51,3 +51,15 @@ bottom
   - 2mm on insides
 - cut grip texture
 - union with screwposts
+
+
+issues:
+* button wall crashes in to button on the rp2040zero
+* button wall prevents AB button to be inserted
+- link port height (tolerance) need to increase to account the overhangs
+- link port outer walls are very thin
+- should create a 3rd part of the gameboy (think cartridge) to address the link port
+* bottom screw pole is too tight, biting on the screw threads
+* might want to reduce the length of the screw poles, so the screw force will translate to the shell walls
+- overhang junk inside the LCD window.
+* start/select was amputated off
