@@ -77,6 +77,10 @@ Issues:
 - link port vs pcb doesnt look right
 * wall too thin, reduce with GBC width1 10 -> 9.8
 
-- support on screwpost close the holes
+- support on screwpost close the holes -> need to fix during slicing
 
-insert to button pivot
+* insert to button pivot
+
+issues:
++ tolerance on link cut
++ increase cartridge stick up
