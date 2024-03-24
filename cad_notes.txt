@@ -63,3 +63,20 @@ issues:
 * might want to reduce the length of the screw poles, so the screw force will translate to the shell walls
 - overhang junk inside the LCD window.
 * start/select was amputated off
+
+Issues:
++ increase pcb-tol 0.3 -> 0.4
++ elephant foot, add chamfer:
+++ link_base
+++ button inserts
+++ cartridge 
++ cartridge grooves lost in detail
++ bottom no screw holes
+** caused by increasing gbz_bottom_height, but the offset001 is still stuck on old sizes
+** cut holes
+- link port vs pcb doesnt look right
+* wall too thin, reduce with GBC width1 10 -> 9.8
+
+- support on screwpost close the holes
+
+insert to button pivot
